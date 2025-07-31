@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Theme Color</title>
+</head>
+<body style="text-align: center;padding-top: 50px;">
+    <h2>Click here to change color theme</h2>
+    <button onclick="changeTheme()">changeTheme</button>
+    <script>
+        const colors =["lightgreen","lightblue","white"];
+        let currentcolor =0;
+        function changeTheme(){
+            document.body.style.backgroundcolor=colors[currentcolor];
+            currentcolor=(currentcolor+1)%colors.length;
+        }
+    </script>
+    
+</body>
+</html>
